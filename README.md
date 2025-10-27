@@ -19,7 +19,7 @@ uts-crud-api/ ├── config/ # Koneksi database ├── controllers/ # Logi
 
 1.  **Clone repository**
     ```bash
-    git clone [URL_GITHUB_ANDA]
+    git clone https://github.com/Pabloz666999/pwl25-mini-project.git
     cd uts-crud-api
     ```
 
