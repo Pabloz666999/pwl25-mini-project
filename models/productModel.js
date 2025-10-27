@@ -19,12 +19,16 @@ const create = (product) => {
   return db.execute(query, [name, category, price, stock]);
 };
 
-// Model untuk memperbarui produk
 const update = (id, product) => {
   const { name, category, price, stock } = product;
-  const query = `UPDATE products SET name = ?, category = ?, price = ?, stock = ? WHERE id = ?`;
+
+  const query = `
+  UPDATE products
+  SET name = ?, category = ?, price = ?, stock = ? 
+  WHERE id = ?`
+
   return db.execute(query, [name, category, price, stock, id]);
-};
+}
 
 // Model untuk menghapus produk
 const remove = (id) => {

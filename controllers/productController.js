@@ -1,12 +1,12 @@
+const { rawListeners } = require('../config/database');
 const Product = require('../models/productModel');
 
-// GET /products
 const getAllProducts = async (req, res, next) => {
   try {
     const [products] = await Product.findAll();
     res.json(products);
   } catch (err) {
-    next(err); // Melempar error ke errorHandler
+    next(err); 
   }
 };
 
@@ -38,20 +38,20 @@ const createProduct = async (req, res, next) => {
   }
 };
 
-// PUT /products/:id
 const updateProduct = async (req, res, next) => {
-  try {
+  try{
     const { id } = req.params;
+
     const [result] = await Product.update(id, req.body);
 
     if (result.affectedRows === 0) {
-      return res.status(404).json({ message: 'Product not found' });
+      return res.status(404).json({ message: 'Productnot found'});
     }
-    res.json({ message: 'Product updated successfully' });
+    res.json({message: 'product update succesfully'})
   } catch (err) {
     next(err);
   }
-};
+}
 
 // DELETE /products/:id
 const deleteProduct = async (req, res, next) => {
