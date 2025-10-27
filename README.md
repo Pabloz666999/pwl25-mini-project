@@ -8,7 +8,7 @@ Repository ini adalah submission Mini Project UTS yang mengimplementasikan sebua
 ## Struktur Folder Proyek
 Struktur folder mengadopsi pola MVC (Model, Controller, Routes) yang dipadukan dengan folder untuk Config dan Middleware. 
 
-
+![alt text](screenshots/Struktur.png)
 
 ## Database
 Saya menggunakan database MySQL dengan nama femalehijab dan satu tabel bernama produk.
