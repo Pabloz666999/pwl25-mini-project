@@ -13,7 +13,7 @@ Struktur folder mengadopsi pola MVC (Model, Controller, Routes) yang dipadukan d
 ## Database
 Saya menggunakan database MySQL dengan nama femalehijab dan satu tabel bernama produk.
 
-<img width="1082" height="321" alt="gambar" src="https://github.com/user-attachments/assets/b254d28a-7d58-42d2-aa2a-a3d9b569226f" />
+![screenshots/Database.png](screenshots/Database.png)
 
 ## Penjelasan Kode Utama
 Berikut adalah penjelasan singkat untuk setiap file berdasarkan kode yang Anda berikan:
@@ -43,12 +43,22 @@ validateProduct.js: Mencegat request POST dan PUT. Middleware ini memastikan fie
 ## Hasil Uji API dengan Postman
 Pengujian endpoint dilakukan menggunakan Postman untuk memverifikasi fungsionalitas CRUD:
 
-1. GET /api/produk (Ambil Semua): Berhasil mengambil seluruh daftar produk dari database dan mengembalikannya sebagai array JSON. <img width="869" height="966" alt="Tes GET All" src="https://github.com/user-attachments/assets/d8ed6219-b5d1-4f30-b366-edb9eed18583" />
+1. GET /api/produk (Ambil Semua): Berhasil mengambil seluruh daftar produk dari database dan mengembalikannya sebagai array 
 
-2. GET /api/produk/1 (Ambil per ID): Berhasil mengambil data spesifik untuk produk dengan ID 1. <img width="885" height="879" alt="Tes GET by ID" src="https://github.com/user-attachments/assets/7f0911fa-144f-4faf-acb9-22ff9c47718e" />
+![alt text](<screenshots/All Products.png>)
 
-3. POST /api/produk (Buat Baru): Berhasil menambahkan produk baru menggunakan body JSON. Server merespons dengan status 201 Created dan data produk yang baru dibuat. <img width="985" height="909" alt="Tes POST" src="https://github.com/user-attachments/assets/4aded2a8-92c7-4c55-b770-584387829021" />
+2. GET /api/produk/1 (Ambil per ID): Berhasil mengambil data spesifik untuk produk dengan ID 2. 
 
-4. PUT /api/produk/1 (Update): Berhasil memperbarui data produk ID 1. Body request berisi data baru, dan server merespons dengan status 200 OK serta data yang telah diperbarui. <img width="766" height="964" alt="Tes PUT" src="https://github.com/user-attachments/assets/d02ad83e-e8fc-4a16-922b-3316cea7c1f1" />
+![alt text](<screenshots/See Product.png>)
 
-5. DELETE /api/produk/2 (Hapus): Berhasil menghapus produk dengan ID 2. Server merespons dengan status 200 OK dan pesan konfirmasi penghapusan. <img width="872" height="781" alt="Tes DELETE" src="https://github.com/user-attachments/assets/ab0017b6-8231-4e42-85e6-2300441d3a54" />
+3. POST /api/produk (Buat Baru): Berhasil menambahkan produk baru menggunakan body JSON. Server merespons dengan status 201 Created dan data produk yang baru dibuat. 
+
+![alt text](screenshots/Add.png)
+
+4. PUT /api/produk/1 (Update): Berhasil memperbarui data produk ID 2. Body request berisi data baru, dan server merespons dengan status 200 OK serta data yang telah diperbarui. 
+
+![alt text](screenshots/Update.png)
+
+5. DELETE /api/produk/2 (Hapus): Berhasil menghapus produk dengan ID 4. Server merespons dengan status 200 OK dan pesan konfirmasi penghapusan. 
+
+![alt text](screenshots/Delete.png)
