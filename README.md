@@ -47,7 +47,7 @@ Pengujian endpoint dilakukan menggunakan Postman untuk memverifikasi fungsionali
 
 ![alt text](<screenshots/All Products.png>)
 
-2. GET /api/produk/1 (Ambil per ID): Berhasil mengambil data spesifik untuk produk dengan ID 2. 
+2. GET /api/produk/2 (Ambil per ID): Berhasil mengambil data spesifik untuk produk dengan ID 2. 
 
 ![alt text](<screenshots/See Product.png>)
 
@@ -55,10 +55,10 @@ Pengujian endpoint dilakukan menggunakan Postman untuk memverifikasi fungsionali
 
 ![alt text](screenshots/Add.png)
 
-4. PUT /api/produk/1 (Update): Berhasil memperbarui data produk ID 2. Body request berisi data baru, dan server merespons dengan status 200 OK serta data yang telah diperbarui. 
+4. PUT /api/produk/2 (Update): Berhasil memperbarui data produk ID 2. Body request berisi data baru, dan server merespons dengan status 200 OK serta data yang telah diperbarui. 
 
 ![alt text](screenshots/Update.png)
 
-5. DELETE /api/produk/2 (Hapus): Berhasil menghapus produk dengan ID 4. Server merespons dengan status 200 OK dan pesan konfirmasi penghapusan. 
+5. DELETE /api/produk/4 (Hapus): Berhasil menghapus produk dengan ID 4. Server merespons dengan status 200 OK dan pesan konfirmasi penghapusan. 
 
 ![alt text](screenshots/Delete.png)
